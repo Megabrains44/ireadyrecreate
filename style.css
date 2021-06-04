@@ -1,0 +1,281 @@
+body{
+	
+	/* background-color: rgb(80, 204, 80); */
+	background-color: #1fc663ff;
+	
+}
+*{
+	user-select: none;
+}
+@font-face {
+  font-family: "roboto_bld";
+  src: url('robota/Roboto-Bold.ttf')
+}
+@font-face {
+  font-family: "roboto_norm";
+  src: url('robota/Roboto-Regular.ttf')
+}
+@font-face {
+  font-family: "roboto_med";
+  src: url('robota/Roboto-Medium.ttf')
+}
+@font-face {
+  font-family: "roboto_medi";
+  src: url('robota/Roboto-MediumItalic.ttf')
+}
+@font-face {
+  font-family: "roboto_thini";
+  src: url('robota/Roboto-ThinItalic.ttf')
+}
+@font-face {
+  font-family: "roboto_thin";
+  src: url('robota/Roboto-Thin.ttf')
+}
+.centeredquestion{
+				display: flex;
+				align-content: center;
+				gap: 20px;
+				justify-content: space-between;
+				width: 1000px;
+        height: 650px;
+        
+        position: absolute; /*Can also be `fixed`*/
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        /*Solves a problem in which the content is being cut when the div is smaller than its' wrapper:*/
+        max-width: 100%;
+        max-height: 100%;
+        overflow: auto;
+}
+
+.reading{
+	width: 50%;
+	height: 100%;
+	
+}
+.answers{
+	width: 50%;
+	height: 100%;
+	margin-left: auto;
+	background-color: #25ae5fff;
+	border-radius: 15px;
+}
+
+.questiondiv{
+	
+	border-top-right-radius: 15px;
+	border-top-left-radius: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #e1ede7ff;
+	height: 100px;
+}
+
+.questiondiv p{
+	font-size: 23px;
+	/* font-family: 'Roboto', sans-serif; */
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	padding: 0;
+	height: fit-content;
+	
+}
+
+.options{
+	margin-top: 30px;
+	
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	flex-direction: column;
+	gap: 30px;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.options div{
+	cursor: pointer;
+	box-shadow: 1px 1px 2px black;
+	background-color: #ffffffff;
+	padding: 15px;
+	border-radius: 10px;
+	
+	width: 100%;
+	font-family: roboto_med;
+}
+
+.options div:hover{
+	background-color: rgb(255, 172, 19);
+}
+.passage{
+	margin-top: 20px;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	height: 590px;
+	background-color: #f9f7e0ff;
+	
+	/* border-top-right-radius: 15px;
+	border-top-left-radius: 15px; */
+	border-radius: 15px;
+}
+.orange{
+	background-color: rgb(225, 147, 0);
+}
+
+.white{
+	background-color: white;
+}
+.white:hover{
+	background-color: rgb(225, 147, 0);
+}
+
+.intro{
+	margin-top: 15px;
+	margin-bottom: 20px;
+	padding: 15px;
+	font-family: roboto_norm;
+	font-size: 14px;
+	display: block;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+.title{
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+	font-size: 25px;
+}
+.author{
+	font-family: roboto_norm;
+	text-align: center;
+	font-size: 20px;
+	font-weight: 200;
+	margin-bottom: 15px;
+	margin-top: 5px;
+
+}
+
+.text{
+	/* font-family: roboto_norm; */
+	font-family: roboto_norm;
+	font-size: 1.2rem;
+	
+	padding: 10px;
+	padding-left: 35px;
+	padding-right: 35px;
+}
+.navbtn{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: row;
+	height: 40px;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #f9f7e0ff;
+	border-bottom-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+	position: relative;
+	top: 10px;
+
+}
+.circle{
+	/* cursor: pointer; */
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	aspect-ratio: 1 / 1;
+	height: 30px;
+	border-radius: 50%;
+	background-color: #d6d5c2ff;
+	color: #f9f7e0ff;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 1.3rem;
+	font-family: roboto_bld;
+	margin-left: 10px;
+}
+
+.circle:last-child{
+	cursor: pointer;
+	margin-left: 0;
+	margin-right: 10px;
+	background-color: #4d4d4dff;
+}
+
+.pages{
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+}
+
+.pages div{
+	cursor: pointer;
+	color: #f9f7e0ff;
+	font-family: roboto_bld;
+	display: flex;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background-color: #4d4d4dff;
+}
+
+.pages div:nth-child(2), .pages div:nth-child(3){
+	background-color: transparent;
+	color: #4d4d4dff;
+}
+
+
+.tabs{
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 8px;
+	height: 40px;
+
+	width: 90%;
+	margin-left: auto; 
+	margin-right: auto;
+	padding: 0;
+	position: relative;
+	top: 20px;
+	left: 15px;
+	/* margin-bottom: -20px; */
+}
+
+.tabs div{
+	
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	cursor: pointer;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #f9f7e0ff;
+	width: 100px;
+	height: 90%;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	position: relative;
+	font-family: roboto_bld;
+	font-size: 1.05rem;
+	bottom: 1px;
+}
+
+.tabs div:last-child{
+	background-color: #4d4d4dff;
+	color: white;
+}
