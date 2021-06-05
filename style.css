@@ -99,7 +99,8 @@ body{
 }
 .options div{
 	cursor: pointer;
-	box-shadow: 1px 1px 2px black;
+	
+	box-shadow: 1px 2px 3px rgba(0,0,0,.5);
 	background-color: #ffffffff;
 	padding: 15px;
 	border-radius: 10px;
